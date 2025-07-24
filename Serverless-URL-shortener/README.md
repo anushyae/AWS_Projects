@@ -3,6 +3,9 @@ SERVERLESS URL SHORTENER WITH PYTHON CDK + GITLAB CI
 About:
 This project is a serverless URL shortener built using Python and deployed with AWS CDK. It is designed to be deployed using GitLab CI/CD pipelines.
 
+Use Cases:
+1. Users upload the Json file to S3 bucket containing a set of long Urls. The Lambda function access the json and convert it to short Url.
+
 Features:
 - Infrastructure as Code (IaC) with AWS CDK (to provision resources like Lambda, API Gateway, DynamoDB) 
 - Serverless architecture using AWS Lambda
@@ -37,3 +40,13 @@ Installation:
    cdk init app --language=python
    # this creates the new CDK project from the template
    ```
+
+AWS Services used:
+1. VPC
+2. S3 bucket
+3. DynamoDB table
+4. Lambda function
+5. API Gateway
+6. IAM
+7. AWS KMS
+8. Secrets Manager
